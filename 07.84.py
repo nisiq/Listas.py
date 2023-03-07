@@ -26,8 +26,15 @@ while True:
         break
 
 print('-='*30)
-print(f"Os dados foram: {principal}")
 print(f"Ao todo, você cadastrou {len(principal)} pessoas.")
-print(f"O maior peso foi de {maior}Kg")
-print(f"O menor peso foi de {menor}Kg")
+print(f"O maior peso foi de {maior}Kg. Peso de ", end='')
+for p in principal:
+    if p [1] == maior:
+        print(f"{p[0]}", end='')
 
+print()
+print(f"O menor peso foi de {menor}Kg. Peso de ",end='')
+for p in principal:
+    if p[1] == menor:
+        print(f"[{p[0]}", end='')
+print()
